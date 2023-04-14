@@ -45,4 +45,6 @@ if __name__=='__main__':
         epd.display(epd.buffer)
         
         gc.collect()
-        sleep(55)
+        curr_seconds = rtc.sec()
+        refresh_seconds = 60 - curr_seconds
+        sleep(refresh_seconds)
