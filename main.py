@@ -17,6 +17,9 @@ if __name__=='__main__':
         if inithr > 12:
             newhr = inithr-12
             ampm = "PM"
+        elif inithr == 12:
+            newhr = 12
+            ampm = "PM"
         elif inithr == 0:
             newhr = 12
             ampm = "AM"
